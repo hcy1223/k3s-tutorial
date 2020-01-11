@@ -2,7 +2,6 @@ version: '3'
 services:
     jenkins-master:
         image: jenkinsci/blueocean
-        container_name: jenkins-container
         ports:
             - 8090:8080
             - 50000:50000
