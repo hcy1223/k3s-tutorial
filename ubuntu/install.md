@@ -11,5 +11,11 @@
 2. 安装docker 
     1. 在线方式： 
     ```curl -fsSL get.docker.com -o get-docker.sh```
-3. 放弃python2吧
+3. 放弃python
+4. bash命令补全
+5. 利用容器编译hugo
+    ```
+    docker run --rm surenpi/hugo-jnlp-agent hugo help
+    ```
+    
         
