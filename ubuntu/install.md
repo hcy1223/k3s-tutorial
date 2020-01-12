@@ -17,5 +17,8 @@
     ```
     docker run --rm surenpi/hugo-jnlp-agent hugo help
     ```
+6. 如果想在容器拥有root权限，可以使用 
+    ```privileged:true```
+    实现docker in docker
     
         
