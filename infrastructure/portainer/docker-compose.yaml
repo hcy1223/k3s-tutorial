@@ -4,7 +4,7 @@ services:
     image: portainer/portainer
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - portainer:/data
+      - portainer_data:/data
     ports:
       - 8091:9000
     networks:
@@ -12,7 +12,6 @@ services:
 
 networks:
   portainer-network:
-    external: true
 
-volumes: 
-  - portainer_data
+volumes:
+  portainer_data:
