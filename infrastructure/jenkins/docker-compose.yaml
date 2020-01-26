@@ -1,13 +1,11 @@
 version: "3"
 services:
     jenkins-master:
-        image: jenkinsci/blueocean
+        image: jenkins_dood:v1
         ports:
             - 8090:8080
-            - 50000:50000
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
             - jenkins_data:/var/jenkins_home
-        privileged: true
 volumes:
     jenkins_data:
