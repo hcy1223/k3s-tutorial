@@ -1,7 +1,8 @@
 version: "3"
 services:
     jenkins-master:
-        image: jenkins_dood:v1
+        image: jenkins_dood:v2
+        restart: always
         ports:
             - 8090:8080
         volumes:
