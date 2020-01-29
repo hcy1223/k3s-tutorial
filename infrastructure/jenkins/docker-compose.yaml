@@ -8,6 +8,6 @@ services:
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
             - jenkins_data:/var/jenkins_home
-            - $(which docker):/bin/docker
+            - /usr/bin/docker:/bin/docker
 volumes:
     jenkins_data:
