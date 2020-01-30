@@ -34,6 +34,10 @@
             "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"]
         }
         ```
+9. npm国内镜像源:
+    ```
+    npm config set registry https://registry.npm.taobao.org
+    ```
 
      
     
