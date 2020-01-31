@@ -1,8 +1,10 @@
 FROM node:lts-alpine3.9
 MAINTAINER chenyuan_hu@163.com
 
-RUN npm install hexo-cli -g
+COPY ./run.sh /run.sh
+RUN npm install hexo-cli -g \
+    && chmod 0777 /run.sh
 
 WORKDIR /blog
 
-CMD ["hexo", "g"]
+CMD ["run.sh"]
