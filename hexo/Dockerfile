@@ -7,4 +7,4 @@ RUN npm install hexo-cli -g \
 
 WORKDIR /blog
 
-CMD ["run.sh"]
+CMD ["/run.sh"]
