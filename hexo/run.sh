@@ -1,5 +1,6 @@
 #/bin/sh
 
-rm -rf node_modules
+rm -rf /blog/*
+cp -rf /root/blog/* /blog/
 npm install
-hexo g
+hexo g -w
