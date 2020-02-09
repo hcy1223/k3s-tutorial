@@ -1,0 +1,18 @@
+pipeline {
+   agent any
+   environment {
+       GIT_HUB= credentials('github')
+   }
+   stages {
+      stage('clone-and-copy') {
+         steps {
+            git 'https://$GIT_HUB_USR:$GIT_HUB_PSW@github.com/hcy1223/blog.git'
+
+            sh '''
+                rm -rf /var/repository/blog
+                cp -rf ./blog /var/repository/blog
+            '''
+         }
+      }
+   }
+}

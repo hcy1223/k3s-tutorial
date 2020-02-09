@@ -9,5 +9,6 @@ services:
             - /var/run/docker.sock:/var/run/docker.sock
             - jenkins_data:/var/jenkins_home
             - /usr/bin/docker:/bin/docker
+            - /root/git:/var/repository
 volumes:
     jenkins_data:
