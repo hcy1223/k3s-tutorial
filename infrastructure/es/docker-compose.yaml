@@ -68,7 +68,7 @@ services:
     networks:
       - somenetwork
 
- kibana7.0.1:
+  kibana7.0.1:
     image: docker.elastic.co/kibana/kibana:7.0.1
     container_name: kibana
     ports:
