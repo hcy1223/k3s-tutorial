@@ -6,7 +6,7 @@ pipeline {
    stages {
       stage('clone-and-copy') {
          steps {
-            git 'https://$GIT_HUB_USR:$GIT_HUB_PSW@github.com/hcy1223/blog.git'
+            git 'https://${GIT_HUB_USR}:${GIT_HUB_PSW}@github.com/hcy1223/blog.git'
 
             sh '''
                 rm -rf /var/repository/blog
